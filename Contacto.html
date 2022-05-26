@@ -83,8 +83,10 @@
         </div>
         <br>
         <div class="col">
+          <script src="js/Count.js"></script>
           <label for="comentario">Comentario</label>
-          <textarea id="comentario" placeholder="Ingrese su mensaje" name="comentario"></textarea>
+          <textarea id="comentario"  placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" > </textarea>
+          <p id="lblRemainingCount"></p>
         </div>
         <input type="submit" class="button" id="enviar">
         <input type="reset" class="button" id="limpiar">
