@@ -53,43 +53,43 @@
   <!--Formulario-->
   <div class="container d-block">
     <div class="row">
-      <form>
+      <form id="formulariocontact">
         <div class="col">
           <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre">
+          <input id="nombre" name="nombre" required>
           <label for="apellido">Apellido</label>
-          <input id="apellido" name="apellido">
+          <input id="apellido" name="apellido"required>
         </div>
         <div class="col">
-          <label for="genero">Género</label>
-          <input type="radio" name="genero" value="Hombre">Hombre</form>
+          <label for="genero" >Género</label>
+          <input type="radio" name="genero" value="Hombre">Hombre</input>
           <input type="radio" name="genero" value="Mujer">Mujer</input>
         </div>
         <div class="col">
           <label for="fnac">Fecha de nacimiento</label>
-          <input type="date" name="dnac"></input>
+          <input type="date" name="dnac"required></input>
         </div>
         <div class="col">
           <label for="rut">Rut</label>
-          <input id="rut" name="rut">
+          <input id="rut" name="rut"required>
         </div>
         <div class="col">
           <label for="Mail">Mail</label>
-          <input type="email" name="email">
+          <input type="email" name="email"required>
         </div>
-        <div>
-          <label for="contraseña">Contraseña</label>
-          <input type="password" name="pass">
+        <div class="col">
+          <label for="contraseña">Tipo usuario</label>
+          <input type="tipouser" name="usertype"required>
         </div>
         <br>
         <div class="col">
           <script src="js/Count.js"></script>
-          <label for="comentario">Comentario</label>
-          <textarea id="comentario"  placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" > </textarea>
+          <label for="comentario" >Comentario</label>
+          <textarea id="comentario"  placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" required> </textarea>
           <p id="lblRemainingCount"></p>
         </div>
-        <input type="submit" class="button" id="enviar">
-        <input type="reset" class="button" id="limpiar">
+        <input type="submit" onclick="enviar()" class="button" id="enviar">
+        <input type="reset" onclick="reset()" class="button" id="limpiar">
       </form>
     </div>
   </div>
