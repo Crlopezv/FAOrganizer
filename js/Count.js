@@ -11,12 +11,13 @@ function textareaLengthCheck(el) {
 
 function enviar() {
   document.getElementById("formulariocontact").submit();
-  alert ("Formulario enviado")
+  alert ("Muchas gracias por su comentario!")
 }
 
 //Resetear formulario (WIP)
 
 function reset() {
   document.getElementById("formulariocontact").reset();
-
 }
+
+
