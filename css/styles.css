@@ -11,5 +11,9 @@ body {
     color: white;
 }
 
-
+.carousel {
+  width:640px;
+  height:360px;
+  
+}
 
